@@ -1,4 +1,4 @@
-baseURL = 'https://www.fucktheworld.uk/zh-cn/'
+baseURL = 'https://www.fucktheworld.uk/'
 title = '昼夜本色'
 theme = "LoveIt"
 # 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
