@@ -1,7 +1,24 @@
 ---
+weight: 1
 title: "配置博客主题"
 date: 2023-04-05T17:17:09+08:00
+lastmod: 2020-03-06T21:40:32+08:00
 draft: false
+author: "iwatermelon"
+authorLink: "https://www.fucktheworld.uk/"
+description: "探索 Hugo - LoveIt 主题的全部内容和背后的核心概念."
+images: ["featured-image.jpg"]
+resources:
+- name: "featured-image"
+  src: "featured-image.jpg"
+
+tags: ["installation", "configuration"]
+categories: ["documentation"]
+
+lightgallery: false
+
+toc:
+  auto: false
 ---
 
 # 主题文档 - 基本概念
@@ -9,7 +26,6 @@ draft: false
 
 探索 Hugo - **LoveIt** 主题的全部内容和背后的核心概念.
 
-<!--more-->
 
 ## 1 准备
 
