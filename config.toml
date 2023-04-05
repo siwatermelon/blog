@@ -1,12 +1,13 @@
 baseURL = 'https://www.fucktheworld.uk/'
 title = '昼夜本色'
 theme = "LoveIt"
-# 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
+# [en, zh-cn, fr, pl, ...] determines default content language
+# [en, zh-cn, fr, pl, ...] 设置默认的语言
+defaultContentLanguage = "zh-cn"
+# 网站语言, 仅在这里 CN大写
 languageCode = "zh-CN"
-# 语言名称 ["English", "简体中文", "Français", "Polski", ...]
-languageName = "简体中文"
 # 是否包括中日韩文字
-hasCJKLanguage = false
+hasCJKLanguage = true
 
 
 # 默认每页列表显示的文章数目
@@ -32,52 +33,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   name = "siwatermelon"
   email = "siwatermelon@proton.me"
   link = "https://www.fucktheworld.uk/"
-
-# 菜单配置
-[menu]
-  [[menu.main]]
-    weight = 1
-    identifier = "posts"
-    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-    pre = ""
-    # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
-    post = ""
-    name = "文章"
-    url = "/posts/"
-    # 当你将鼠标悬停在此菜单链接上时, 将显示的标题
-    title = ""
-  [[menu.main]]
-    weight = 2
-    identifier = "tags"
-    pre = ""
-    post = ""
-    name = "标签"
-    url = "/tags/"
-    title = ""
-  [[menu.main]]
-    weight = 3
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "分类"
-    url = "/categories/"
-    title = ""
-#   [[menu.main]]
-#     weight = 4
-#     identifier = "about"
-#     pre = ""
-#     post = ""
-#     name = "关于"
-#     url = "/about/"
-#     title = ""
-#   [[menu.main]]
-#     weight = 5
-#     identifier = "archive"
-#     pre = ""
-#     post = ""
-#     name = "文档"
-#     url = "/archive/"
-#     title = ""
 
 # Hugo 解析文档的配置
 [markup]
@@ -227,16 +182,16 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       defaultHiddenFromHomePage = false
 
   # 作者的社交信息设置
-  [params.social]
-    GitHub = "siwatermelon"
-    Linkedin = "siwatermelon"
-    Twitter = "siwatermelon"
-    Instagram = "xxxx"
-    Facebook = "xxxx"
-    Telegram = "siwatermelon"
-    Youtubelegacy = "siwatermelon"
-    Email = "siwatermelon@proton.me"
-    RSS = true # LoveIt 新增 | 0.2.0
+#   [params.social]
+#     GitHub = "siwatermelon"
+#     Linkedin = "siwatermelon"
+#     Twitter = "siwatermelon"
+#     Instagram = "xxxx"
+#     Facebook = "xxxx"
+#     Telegram = "siwatermelon"
+#     Youtubelegacy = "siwatermelon"
+#     Email = "siwatermelon@proton.me"
+#     RSS = true # LoveIt 新增 | 0.2.0
 
   # LoveIt 更改 | 0.2.0 文章页面全局配置
   [params.page]
@@ -345,27 +300,26 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         clientId = "2762961918e4f0c3eb6c"
         clientSecret = "17e365840ec42fa47898f00594a5e16dd22ab20c"
       # Valine 评论系统设置
-      [params.page.comment.valine]
-        enable = false
-        appId = ""
-        appKey = ""
-        placeholder = ""
-        avatar = "mp"
-        meta= ""
-        pageSize = 10
-        # 为空时自动适配当前主题 i18n 配置
-        lang = ""
-        visitor = true
-        recordIP = true
-        highlight = true
-        enableQQ = false
-        serverURLs = ""
-        # LoveIt 新增 | 0.2.6 emoji 数据文件名称, 默认是 "google.yml"
-        # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
-        # 位于 "themes/LoveIt/assets/lib/valine/emoji/" 目录
-        # 可以在你的项目下相同路径存放你自己的数据文件:
-        # "assets/lib/valine/emoji/"
-        emoji = ""
+    #   [params.page.comment.valine]
+    #     enable = true
+    #     appId = 'cIRpq8figzQxyGz5LyAdUahJ-gzGzoHsz'
+    #     appKey = 'T9YWfgGhznKaXXx7TCLxzS3C'
+    #     notify = true  # mail notifier , https://github.com/xCss/Valine/wiki
+    #     verify = false # Verification code
+    #     avatar = 'robohash'
+    #     placeholder = '说点什么吧...'
+    #     visitor = true
+    #     path = true
+    #     meta = true
+    #     pageSize = true
+    #     lang = true
+    #     enableQQ = true
+    #     # LoveIt 新增 | 0.2.6 emoji 数据文件名称, 默认是 "google.yml"
+    #     # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
+    #     # 位于 "themes/LoveIt/assets/lib/valine/emoji/" 目录
+    #     # 可以在你的项目下相同路径存放你自己的数据文件:
+    #     # "assets/lib/valine/emoji/"
+    #     emoji = ""
       # Facebook 评论系统设置
       [params.page.comment.facebook]
         enable = false
@@ -564,12 +518,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   taxonomy = ["HTML", "RSS"]
   taxonomyTerm = ["HTML"]
 
-defaultContentLanguage = "zh-cn"
-
 [languages]
   [languages.en]
     weight = 1
-    title = "My New Hugo Site"
+    # title = "My New Hugo Site"
     languageCode = "en"
     languageName = "English"
     [[languages.en.menu.main]]
@@ -599,7 +551,7 @@ defaultContentLanguage = "zh-cn"
 
   [languages.zh-cn]
     weight = 2
-    title = "我的全新 Hugo 网站"
+    # title = "我的全新 Hugo 网站"
     languageCode = "zh-CN"
     languageName = "简体中文"
     hasCJKLanguage = true
@@ -608,11 +560,11 @@ defaultContentLanguage = "zh-cn"
       identifier = "posts"
       pre = ""
       post = ""
-      name = "文章"
+      name = "归档"
       url = "/posts/"
       title = ""
     [[languages.zh-cn.menu.main]]
-      weight = 2
+      weight = 4
       identifier = "tags"
       pre = ""
       post = ""
@@ -627,3 +579,34 @@ defaultContentLanguage = "zh-cn"
       name = "分类"
       url = "/categories/"
       title = ""
+    [[languages.zh-cn.menu.main]]
+        identifier = "documentation"
+        pre = ""
+        name = "专栏"
+        url = "/categories/documentation/"
+        title = ""
+        weight = 2
+    #   [[languages.zh-cn.menu.main]]
+    #     identifier = "about"
+    #     pre = ""
+    #     post = ""
+    #     name = "关于"
+    #     url = "/about/"
+    #     title = ""
+    #     weight = 5
+    [[languages.zh-cn.menu.main]]
+        identifier = "github"
+        pre = "<i class='fab fa-github fa-fw'></i>"
+        post = ""
+        name = "Github"
+        url = "https://github.com/siwatermelon"
+        title = "GitHub"
+        weight = 6
+    [[languages.zh-cn.menu.main]]
+        identifier = "friend"
+        pre = "<i class='fas fa-user-friends'></i>"
+        post = ""
+        name = "笔记"
+        url = "/friend/"
+        title = ""
+        weight = 5    
