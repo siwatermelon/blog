@@ -378,7 +378,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       Mix = false
     # LoveIt 更改 | 0.2.0 评论系统设置
     [params.page.comment]
-      enable = false
+      enable = true
       # Disqus 评论系统设置
       [params.page.comment.disqus]
         # LoveIt 新增 | 0.1.1
@@ -388,11 +388,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gitalk 评论系统设置
       [params.page.comment.gitalk]
         # LoveIt 新增 | 0.1.1
-        enable = false
-        owner = ""
-        repo = ""
-        clientId = ""
-        clientSecret = ""
+        enable = true
+        owner = "siwatermelon"
+        repo = "blog"
+        clientId = "2762961918e4f0c3eb6c"
+        clientSecret = "17e365840ec42fa47898f00594a5e16dd22ab20c"
       # Valine 评论系统设置
       [params.page.comment.valine]
         enable = false
@@ -613,67 +613,3 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   taxonomy = ["HTML", "RSS"]
   taxonomyTerm = ["HTML"]
 
-# 设置默认的语言 ["en", "zh-cn", "fr", "pl", ...]
-defaultContentLanguage = "zh-cn"
-
-[languages]
-  [languages.en]
-    weight = 1
-    title = "My New Hugo Site"
-    languageCode = "en"
-    languageName = "English"
-    [[languages.en.menu.main]]
-      weight = 1
-      identifier = "posts"
-      pre = ""
-      post = ""
-      name = "Posts"
-      url = "/posts/"
-      title = ""
-    [[languages.en.menu.main]]
-      weight = 2
-      identifier = "tags"
-      pre = ""
-      post = ""
-      name = "Tags"
-      url = "/tags/"
-      title = ""
-    [[languages.en.menu.main]]
-      weight = 3
-      identifier = "categories"
-      pre = ""
-      post = ""
-      name = "Categories"
-      url = "/categories/"
-      title = ""
-
-  [languages.zh-cn]
-    weight = 2
-    title = "我的全新 Hugo 网站"
-    languageCode = "zh-CN"
-    languageName = "简体中文"
-    hasCJKLanguage = true
-    [[languages.zh-cn.menu.main]]
-      weight = 1
-      identifier = "posts"
-      pre = ""
-      post = ""
-      name = "文章"
-      url = "/posts/"
-      title = ""
-    [[languages.zh-cn.menu.main]]
-      weight = 2
-      identifier = "tags"
-      pre = ""
-      post = ""
-      name = "标签"
-      url = "/tags/"
-      title = ""
-    [[languages.zh-cn.menu.main]]
-      weight = 3
-      identifier = "categories"
-      pre = ""
-      post = ""
-      name = "分类"
-      url = "/categories/"
-      title = ""
