@@ -12,8 +12,8 @@ resources:
 - name: "featured-image"
   src: "featured-image.jpg"
 
-tags: ["installation", "configuration"]
-categories: ["documentation"]
+tags: ["configuration"]
+categories: ["工具相关"]
 
 lightgallery: false
 

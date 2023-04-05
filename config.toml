@@ -1,4 +1,4 @@
-baseURL = 'https://www.fucktheworld.uk/'
+baseURL = 'https://www.fucktheworld.uk/zh-cn/'
 title = '昼夜本色'
 theme = "LoveIt"
 # 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
@@ -6,7 +6,8 @@ languageCode = "zh-CN"
 # 语言名称 ["English", "简体中文", "Français", "Polski", ...]
 languageName = "简体中文"
 # 是否包括中日韩文字
-hasCJKLanguage = true
+hasCJKLanguage = false
+
 
 # 默认每页列表显示的文章数目
 paginate = 12
@@ -120,19 +121,19 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
       post = ""
       # LoveIt 新增 | 0.2.5 是否为标题显示打字机动画
-      typeit = true
+      typeit = false
 
   # 页面底部信息配置
   [params.footer]
     enable = true
     # LoveIt 新增 | 0.2.0 自定义内容 (支持 HTML 格式)
-    custom = ''
+    custom = '由 Hugo 强力驱动 | 托管在 Cloudflare上 | 主题 - LoveIt'
     # LoveIt 新增 | 0.2.0 是否显示 Hugo 和主题信息
-    hugo = true
+    hugo = false
     # LoveIt 新增 | 0.2.0 是否显示版权信息
     copyright = true
     # LoveIt 新增 | 0.2.0 是否显示作者
-    author = true
+    author = false
     # 网站创立年份
     since = 2018
     # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
@@ -562,3 +563,67 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   taxonomyTerm = ["HTML"]
+
+defaultContentLanguage = "zh-cn"
+
+[languages]
+  [languages.en]
+    weight = 1
+    title = "My New Hugo Site"
+    languageCode = "en"
+    languageName = "English"
+    [[languages.en.menu.main]]
+      weight = 1
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "Posts"
+      url = "/posts/"
+      title = ""
+    [[languages.en.menu.main]]
+      weight = 2
+      identifier = "tags"
+      pre = ""
+      post = ""
+      name = "Tags"
+      url = "/tags/"
+      title = ""
+    [[languages.en.menu.main]]
+      weight = 3
+      identifier = "categories"
+      pre = ""
+      post = ""
+      name = "Categories"
+      url = "/categories/"
+      title = ""
+
+  [languages.zh-cn]
+    weight = 2
+    title = "我的全新 Hugo 网站"
+    languageCode = "zh-CN"
+    languageName = "简体中文"
+    hasCJKLanguage = true
+    [[languages.zh-cn.menu.main]]
+      weight = 1
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "文章"
+      url = "/posts/"
+      title = ""
+    [[languages.zh-cn.menu.main]]
+      weight = 2
+      identifier = "tags"
+      pre = ""
+      post = ""
+      name = "标签"
+      url = "/tags/"
+      title = ""
+    [[languages.zh-cn.menu.main]]
+      weight = 3
+      identifier = "categories"
+      pre = ""
+      post = ""
+      name = "分类"
+      url = "/categories/"
+      title = ""
